@@ -1,2 +1,382 @@
+/* Typographic v2.9.3 https://github.com/corysimmons/typographic */
+html {
+  font-family: 'Geneva', 'Tahoma', 'Verdana', 'sans-serif';
+  font-weight: 500;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.75em;
+}
+@media (min-width: 600px) {
+  html {
+    font-size: calc( 16px + (20 - 16) * ((100vw - 600px) / (1140 - 600)) );
+  }
+}
+@media (min-width: 1140px) {
+  html {
+    font-size: 20px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+p,
+blockquote,
+pre,
+address,
+dl,
+ol,
+ul,
+table {
+  margin-bottom: 1.75em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Optima', 'Segoe', 'Segoe UI', 'Candara', 'Calibri', 'Arial', 'sans-serif';
+  font-weight: 500;
+  color: $red;
+  clear: both;
+}
+h1 {
+  font-size: 53.81737057623773px;
+  margin-top: 0.650347641017113em;
+  line-height: 0.780417169220536em;
+  margin-bottom: 0.130069528203423em;
+}
+@media (min-width: 600px) {
+  h1 {
+    font-size: calc( 53.81737057623773px + (67.27171322029716 - 53.81737057623773) * ((100vw - 600px) / (1140 - 600)) );
+  }
+}
+@media (min-width: 1140px) {
+  h1 {
+    font-size: 67.27171322029716px;
+    margin-top: 0.650347641017113em;
+    line-height: 0.780417169220536em;
+    margin-bottom: 0.130069528203423em;
+  }
+}
+h2 {
+  font-size: 42.224253144732614px;
+  margin-top: 0.828907497310374em;
+  line-height: 0.994688996772449em;
+  margin-bottom: 0.177560144703744em;
+}
+@media (min-width: 600px) {
+  h2 {
+    font-size: calc( 42.224253144732614px + (52.78031643091577 - 42.224253144732614) * ((100vw - 600px) / (1140 - 600)) );
+  }
+}
+@media (min-width: 1140px) {
+  h2 {
+    font-size: 52.78031643091577px;
+    margin-top: 0.828907497310374em;
+    line-height: 0.994688996772449em;
+    margin-bottom: 0.17520441565541em;
+  }
+}
+h3 {
+  font-size: 33.12847756292408px;
+  margin-top: 1.05649285976155em;
+  line-height: 1.26779143171386em;
+  margin-bottom: 0.230433037599061em;
+}
+@media (min-width: 600px) {
+  h3 {
+    font-size: calc( 33.12847756292408px + (41.4105969536551 - 33.12847756292408) * ((100vw - 600px) / (1140 - 600)) );
+  }
+}
+@media (min-width: 1140px) {
+  h3 {
+    font-size: 41.4105969536551px;
+    margin-top: 1.05649285976155em;
+    line-height: 1.26779143171386em;
+    margin-bottom: 0.226606144469711em;
+  }
+}
+h4 {
+  font-size: 25.992076683399535px;
+  margin-top: 1.346564202096002em;
+  line-height: 1.615877042515203em;
+  margin-bottom: 0.300396871568339em;
+}
+@media (min-width: 600px) {
+  h4 {
+    font-size: calc( 25.992076683399535px + (32.49009585424942 - 25.992076683399535) * ((100vw - 600px) / (1140 - 600)) );
+  }
+}
+@media (min-width: 1140px) {
+  h4 {
+    font-size: 32.49009585424942px;
+    margin-top: 1.346564202096002em;
+    line-height: 1.615877042515203em;
+    margin-bottom: 0.294180065338512em;
+  }
+}
+h5 {
+  font-size: 20.392970037108196px;
+  margin-top: 1.716277714149142em;
+  line-height: 2.059533256978971em;
+  margin-bottom: 0.343255542829828em;
+}
+@media (min-width: 600px) {
+  h5 {
+    font-size: calc( 20.392970037108196px + (25.491212546385245 - 20.392970037108196) * ((100vw - 600px) / (1140 - 600)) );
+  }
+}
+@media (min-width: 1140px) {
+  h5 {
+    font-size: 25.491212546385245px;
+    margin-top: 1.716277714149142em;
+    line-height: 2.059533256978971em;
+    margin-bottom: 0.343255542829828em;
+  }
+}
+h6 {
+  font-size: 16px;
+  margin-top: 2.1875em;
+  line-height: 2.625em;
+  margin-bottom: 0.57421875em;
+}
+@media (min-width: 600px) {
+  h6 {
+    font-size: calc( 16px + (20 - 16) * ((100vw - 600px) / (1140 - 600)) );
+  }
+}
+@media (min-width: 1140px) {
+  h6 {
+    font-size: 20px;
+    margin-top: 2.1875em;
+    line-height: 2.625em;
+    margin-bottom: 0.46484375em;
+  }
+}
+blockquote {
+  font-style: italic;
+}
+blockquote cite {
+  display: block;
+  font-style: normal;
+}
+pre {
+  padding: 0.875em;
+  margin-bottom: 1.75em;
+}
+pre code {
+  padding: 0;
+}
+code {
+  font-family: 'Courier New', 'Courier', 'Lucida Sans Typewriter', 'Lucida Typewriter', 'monospace';
+  padding: 0.0875em 0.2625em;
+  line-height: 0;
+}
+big,
+small,
+sub,
+sup {
+  line-height: 0;
+}
+abbr,
+acronym {
+  border-bottom: 1px dotted currentColor;
+  cursor: help;
+}
+address {
+  font-style: normal;
+}
+dt {
+  color: $red;
+  font-weight: bold;
+}
+ul {
+  padding-left: 1.1em;
+}
+ol {
+  padding-left: 1.4em;
+}
+fieldset {
+  padding: 0.875em 1.75em 1.75em;
+  border-width: 1px;
+  border-style: solid;
+  max-width: 100%;
+  margin-bottom: 1.8375em;
+}
+@media (min-width: 1140px) {
+  fieldset {
+    margin-bottom: 2.078125em;
+  }
+}
+fieldset button,
+fieldset input[type="submit"] {
+  margin-bottom: 0;
+}
+legend {
+  color: $red;
+  font-weight: bold;
+}
+label {
+  display: block;
+  padding-bottom: 0.21875em;
+  margin-bottom: -0.21875em;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  display: block;
+  max-width: 100%;
+  padding: 0.4375em;
+  font-size: 16px;
+  margin-bottom: 1.18125em;
+}
+@media (min-width: 600px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    font-size: calc( 16px + (20 - 16) * ((100vw - 600px) / (1140 - 600)) );
+  }
+}
+@media (min-width: 1140px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    font-size: 20px;
+    margin-bottom: 0.5140625em;
+  }
+}
+input[type="submit"],
+button {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0.4375em 1.75em;
+  margin-bottom: 1.18125em;
+}
+@media (min-width: 600px) {
+  input[type="submit"],
+  button {
+    font-size: calc( 16px + (20 - 16) * ((100vw - 600px) / (1140 - 600)) );
+  }
+}
+@media (min-width: 1140px) {
+  input[type="submit"],
+  button {
+    font-size: 20px;
+    margin-bottom: 1.3125em;
+  }
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 2.1875em;
+}
+@media (min-width: 1140px) {
+  table {
+    margin-bottom: 2.05625em;
+  }
+}
+th {
+  text-align: left;
+  color: $red;
+  padding: 0.21875em 0.875em;
+}
+@media (min-width: 1140px) {
+  th {
+    padding: 0.4375em 0.875em;
+  }
+}
+td {
+  padding: 0.21875em 0.875em;
+}
+@media (min-width: 1140px) {
+  td {
+    padding: 0.4375em 0.875em;
+  }
+}
+/* Bootstrap 3.3.6 https://github.com/maxmx/bootstrap-stylus */
+/* Tmg v2 https://github.com/davidecrenna/Tmg_dev */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #fff4e6;
+  color: #854442;
+}
 
 /*# sourceMappingURL=app.css.map */

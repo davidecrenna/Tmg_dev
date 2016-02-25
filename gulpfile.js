@@ -1,6 +1,11 @@
 var elixir = require('laravel-elixir');
 //https://www.npmjs.com/package/laravel-elixir-livereload
 require('laravel-elixir-livereload');
+// https://github.com/postcss/postcss
+// https://github.com/peterramsing/lost
+// https://github.com/JeffreyWay/laravel-elixir-stylus
+require('laravel-elixir-stylus');
+
 
 /*
  |--------------------------------------------------------------------------
@@ -16,23 +21,30 @@ require('laravel-elixir-livereload');
 //elixir.config.sourcemaps = false;
 
 elixir(function(mix) {
-   mix.sass('bootstrap.scss')
-   .sass('app.scss')
-   .sass('variables.scss');
 
-   mix.copy('resources/bower_box/jquery/dist/jquery.js' , 'public/js/vendor')
+ mix
+   .copy('resources/bower_box/typographic/stylus/typographic.styl' , 'resources/assets/stylus')
+   .copy('resources/bower_box/normalize.styl/normalize.styl' , 'resources/assets/stylus')
+   .copy('resources/bower_box/jquery/dist/jquery.js' , 'public/js/vendor')
    .copy('resources/bower_box/velocity/velocity.js' , 'public/js/vendor')
    .copy('resources/bower_box/velocity/velocity.ui.js' , 'public/js/vendor')
-   .copy('resources/bower_box/tether/dist/js/tether.js' , 'public/js/vendor')
-   .copy('resources/bower_box/bootstrap/dist/js/bootstrap.js' , 'public/js/vendor');
+   .copy('resources/bower_box/bootstrap-stylus/js/*.js' , 'public/js/vendor')
+   .copy('resources/assets/js/app.js' , 'public/js/vendor')
 
-   mix.styles([ 'bootstrap.css' , 'variables.css' , 'app.css' ] , 'public/css/all.css' , 'public/css');
+   .stylus('normalize.styl')
+   .stylus('app.styl', null, {
+            use: [
+                require('poststylus')(['lost'])
+            ]
+    })
 
-   mix.version('public/css/all.css');
+   .styles([ 'normalize.css' , 'app.css'] , 'public/css/TmgStyles.css' , 'public/css')
 
-   mix.scripts([ 'jquery.js' , 'velocity.js' , 'velocity.ui.js' , 'tether.js' , 'bootstrap.js'] , 'public/js/all.js' , 'public/js/vendor');
+   .scripts([ 'jquery.js' , 'velocity.js' , 'velocity.ui.js' , 'app.js'] , 'public/js/TmgScripts.js' , 'public/js/vendor')
 
-   mix.livereload();
+   .version('public/css/TmgStyles.css')
+
+   .livereload();
 });
 
 // gulp --production

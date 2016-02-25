@@ -4,6 +4,7 @@
     "jquery": "^2.2.0",
     "velocity": "^1.2.3",
     "bootstrap": "v4.0.0-alpha.2",
-    "tether": "^1.2.0"
+    "bootstrap-stylus": "^5.0.2",
+    "normalize.styl": "^3.0.3"
   }
 }
