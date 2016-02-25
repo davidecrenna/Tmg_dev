@@ -27,7 +27,22 @@
     @endif
 <!-- Livereload -->
 
-    <h1>Davide Culo</h1>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="">
+        </a>
+        </div>
+     <ul class="nav navbar-nav navbar-right">
+        <li><button type="button" class="btn btn-default navbar-btn">Accedi</button></li>
+        <li><button type="button" class="btn btn-default navbar-btn">Registrati</button></li>
+    </ul>
+</div>
+</nav>
+
+    
+
 
     <script src="js/TmgScripts.js" type="text/javascript"></script>
     
