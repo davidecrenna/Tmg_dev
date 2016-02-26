@@ -3,8 +3,8 @@ var elixir = require('laravel-elixir');
 require('laravel-elixir-livereload');
 // https://github.com/postcss/postcss
 // https://github.com/peterramsing/lost
-// https://github.com/JeffreyWay/laravel-elixir-stylus
-require('laravel-elixir-stylus');
+// https://www.npmjs.com/package/laravel-elixir-postcss
+require('laravel-elixir-postcss');
 
 
 /*
@@ -28,7 +28,7 @@ elixir(function(mix) {
    .copy('resources/bower_box/velocity/velocity.js' , 'public/js/vendor')
    .copy('resources/bower_box/velocity/velocity.ui.js' , 'public/js/vendor')
    .copy('resources/bower_box/bootstrap-sass/assets/javascripts' , 'public/js/vendor' )
-   .copy('resources/assets/js/app.js' , 'public/js/vendor')
+   .copy('resources/assets/js/app.js' , 'public/js/vendor');
 
    .sass('app.scss')
 

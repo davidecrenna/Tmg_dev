@@ -3,7 +3,9 @@
   "devDependencies": {
     "gulp": "^3.8.8",
     "laravel-elixir-livereload": "^1.1.4",
+    "laravel-elixir-postcss": "^0.3.5",
     "laravel-elixir-stylus": "^1.0.1",
+    "lost": "^6.7.2",
     "poststylus": "^0.2.3"
   },
   "dependencies": {
