@@ -180,6 +180,18 @@ $btn-danger-color:               #fff !default;
 $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              darken($btn-danger-bg, 5%) !default;
 
+$btn-facebook-color:              $palette-white !default;
+$btn-facebook-bg:                 #3b5998 !default;
+$btn-facebook-border:             $palette-white !default;
+
+$btn-google-color:              $palette-white !default;
+$btn-google-bg:                 #d62d20 !default;
+$btn-google-border:             $palette-white !default;
+
+$btn-mail-color:              $palette-white !default;
+$btn-mail-bg:                 #008744 !default;
+$btn-mail-border:             $palette-white !default;
+
 $btn-link-disabled-color:        $gray-light !default;
 
 // Allows for customizing button radius independently from global border radius
