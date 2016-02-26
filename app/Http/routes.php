@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
+Route::get('/signup', function () {
+    return view('pages.signup');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes

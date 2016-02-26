@@ -29,7 +29,8 @@
 
 .navbar-brand {
   float: left;
-  padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  //padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  padding: 0;
   font-size: $font-size-large;
   line-height: $line-height-computed;
   height: $navbar-height;
@@ -41,6 +42,9 @@
 
   > img {
     display: block;
+    width: 3em;
+    position: relative;
+    top: 1.2em;
   }
 }
 
@@ -55,7 +59,9 @@
 
   > li{
     float: right;
-    margin-right: 1em;
+    &:nth-child(2){
+       margin-right: 1em;
+    }
     > a {
       padding-top:    $navbar-padding-vertical;
       padding-bottom: $navbar-padding-vertical;

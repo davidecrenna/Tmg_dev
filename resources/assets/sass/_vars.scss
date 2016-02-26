@@ -27,6 +27,10 @@ $palette-brown-dark:	#3c2f2f !default;
 $palette-red:			#854442 !default;
 $palette-white:			#fff4e6 !default;
 
+$palette-facebook:		#3b5998 !default;
+$palette-google:		#dd4a3f !default;
+$palette-mail:			#6bb120 !default;
+
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -49,7 +53,7 @@ $link-hover-decoration: none !default;
 //## Font, line-height, and color for body text, headings, and more.
 
 //$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-sans-serif:  'Handlee', sans-serif; // Dosis Abel Satisfy Handlee Open Sans Condensed
+$font-family-sans-serif:  'Handlee', sans-serif !default; // Dosis Abel Satisfy Handlee Open Sans Condensed
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
@@ -72,8 +76,8 @@ $line-height-base:        20/16 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
+$headings-font-family:    'Dosis' ,sans-serif !default;
+$headings-font-weight:    700 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
@@ -155,14 +159,15 @@ $table-border-color:            #ddd !default;
 //## For each of Bootstrap's buttons, define text, background and border color.
 
 $btn-font-weight:                normal !default;
+$btn-border: 					 2px;
 
 $btn-default-color:              $palette-white !default;
 $btn-default-bg:                 $palette-brown-light !default;
-$btn-default-border:             $palette-white !default;
+$btn-default-border:             $palette-brown-light !default;
 
 $btn-primary-color:              $palette-white !default;
 $btn-primary-bg:                 $palette-red !default;
-$btn-primary-border:             $palette-white !default;
+$btn-primary-border:             $palette-red !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
@@ -181,16 +186,16 @@ $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              darken($btn-danger-bg, 5%) !default;
 
 $btn-facebook-color:              $palette-white !default;
-$btn-facebook-bg:                 #3b5998 !default;
-$btn-facebook-border:             $palette-white !default;
+$btn-facebook-bg:                 $palette-facebook !default;
+$btn-facebook-border:             $palette-facebook !default;
 
 $btn-google-color:              $palette-white !default;
-$btn-google-bg:                 #d62d20 !default;
-$btn-google-border:             $palette-white !default;
+$btn-google-bg:                 $palette-google !default;
+$btn-google-border:             $palette-google  !default;
 
 $btn-mail-color:              $palette-white !default;
-$btn-mail-bg:                 #008744 !default;
-$btn-mail-border:             $palette-white !default;
+$btn-mail-bg:                 $palette-mail !default;
+$btn-mail-border:             $palette-mail !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 
@@ -198,6 +203,7 @@ $btn-link-disabled-color:        $gray-light !default;
 $btn-border-radius-base:         $border-radius-base !default;
 $btn-border-radius-large:        $border-radius-large !default;
 $btn-border-radius-small:        $border-radius-small !default;
+$btn-border-radius-mod:			 255px 15px 225px 15px/15px 225px 15px 255px !default;
 
 
 //== Forms

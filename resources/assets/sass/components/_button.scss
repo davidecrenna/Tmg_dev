@@ -15,9 +15,9 @@
   touch-action: manipulation;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 0px solid transparent;
+  border: $btn-border solid transparent;
   white-space: nowrap;
-  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-mod);
   @include user-select(none);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: box-shadow 0.2s ease-in-out;
@@ -27,23 +27,25 @@
   &.active {
     &:focus,
     &.focus {
-      @include tab-focus;
+      outline: 0;
+      //@include tab-focus;
     }
   }
 
   &:hover,
   &:focus,
   &.focus {
+    outline: 0;
     color: $btn-default-color;
     text-decoration: none;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.12), 0 3px 3px rgba(0,0,0,0.24);
   }
 
   &:active,
   &.active {
     outline: 0;
     background-image: none;
-    //@include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    box-shadow: none;
   }
 
   &.disabled,
@@ -103,8 +105,6 @@ a.btn {
 
 // Link buttons
 // -------------------------
-
-// Make a button look and behave like a link
 .btn-link {
   color: $link-color;
   font-weight: normal;
@@ -145,15 +145,15 @@ a.btn {
 // --------------------------------------------------
 
 .btn-lg {
-  // line-height: ensure even-numbered height of button next to large input
-  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
+  // line-heighat: ensure even-numbered height of button next to large input
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-mod);
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-mod);
 }
 .btn-xs {
-  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-mod);
 }
 
 
@@ -176,5 +176,41 @@ input[type="reset"],
 input[type="button"] {
   &.btn-block {
     width: 100%;
+  }
+}
+
+.btn-default{
+  &:hover,&:focus,&:active{
+    background: $palette-brown-light;
+    border-color: $palette-brown-light;
+    outline: 0;
+  }
+}
+.btn-primary{
+  &:hover,&:focus,&:active{
+    background: $palette-red;
+    border-color: $palette-red;
+    outline: 0;
+  }
+}
+.btn-facebook{
+  &:hover,&:focus,&:active{
+    background: $palette-facebook;
+    border-color: $palette-facebook;
+    outline: 0;
+  }
+}
+.btn-google{
+  &:hover,&:focus,&:active{
+    background: $palette-google;
+    border-color: $palette-google;
+    outline: 0;
+  }
+}
+.btn-mail{
+  &:hover,&:focus,&:active{
+    background: $palette-mail;
+    border-color: $palette-mail;
+    outline: 0;
   }
 }

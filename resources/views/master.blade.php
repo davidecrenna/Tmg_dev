@@ -29,23 +29,7 @@
 <!-- Livereload -->
 
 
-<nav class="navbar navbar-fixed-top navbar-tmg">
-  <div class="container-fluid">
 
-    <div class="navbar-header">
-      <a class="navbar-brand" href="javascript:void(0)"></a>
-  </div>
-
-  <div class="navbar-master">
-
-    <ul class="nav navbar-nav">
-        <li><button type="button" class="btn btn-default navbar-btn btn-lg"><a href="javascript:void(0)">Accedi</a> </button></li>
-        <li><button type="button" class="btn btn-primary navbar-btn btn-lg"><a href="javascript:void(0)">Registrati</a></button></li>
-    </ul>
-
-</div>
-</div>
-</nav>
 
 
 @yield('content')

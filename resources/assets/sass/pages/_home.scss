@@ -1,0 +1,121 @@
+.home__slider__container{
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: #000;
+}
+
+.home__slider,
+.home__slider:after{
+	list-style: none;
+	position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+    overflow: hidden;
+
+    span{
+    	width: 100vw;
+    	height: 100vh;
+    	position: absolute;
+    	top: 0px;
+    	left: 0px;
+    	color: transparent;
+    	background-size: cover;
+    	background-position: center;
+    	background-repeat: none;
+    	opacity: 0;
+    	z-index: 0;
+    	animation: imageAnimation 36s linear infinite 0s; 
+    }
+
+    li:nth-child(1) span{
+    	 background-image: url('../../img/intro1.jpg'); 
+    }
+    li:nth-child(2) span{
+    	 background-image: url('../../img/intro2.jpg'); 
+    	 animation-delay: 6s; 
+    }
+    li:nth-child(3) span{
+    	 background-image: url('../../img/intro3.jpg'); 
+    	 animation-delay: 12s; 
+    }
+    li:nth-child(4) span{
+    	 background-image: url('../../img/intro4.jpg');
+    	 animation-delay: 18s;  
+    }
+    li:nth-child(5) span{
+    	 background-image: url('../../img/intro5.jpg');
+    	 animation-delay: 24s;  
+    }
+    li:nth-child(6) span{
+    	 background-image: url('../../img/intro6.jpg'); 
+    	 animation-delay: 30s; 
+    }
+}
+
+.home__intro{
+	position: relative;
+	z-index: 20;
+	h1,h3{
+		text-transform: uppercase;
+	}
+	p{
+		margin: 5% 0;
+		font-size: 120%;
+	}
+	button{
+		width: 50%;
+		margin: 0 auto;
+		margin-bottom: 3%;
+
+		.fa{
+			margin-right: 0.7em;
+		}
+		@media (min-width: $grid-float-breakpoint){
+			width: 100%;
+		}
+	}
+}
+
+@keyframes imageAnimation { 
+    0% 
+    { 
+    	opacity: 0; 
+    	animation-timing-function: ease-in; 
+    	transform: scale(1.02); 
+    }
+    8% 
+    { 
+    	opacity: .6; 
+    	animation-timing-function: ease-out;
+    	transform: scale(1.04);
+    }
+    17% 
+    { 
+    	opacity: .6; 
+    	transform: scale(1.06); 
+    }
+    25% 
+    { 
+    	opacity: 0 
+    }
+    100% 
+    { 
+    	opacity: 0 
+    }
+}
+
+
+.home__presentation{
+	width: 100vw;
+	height: 100vh;
+	background: red;
+}
