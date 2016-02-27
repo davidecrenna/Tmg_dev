@@ -7,7 +7,6 @@
 
 		<div class="navbar-header">
 			<a class="navbar-brand" href="{{ url('/') }}"><img src="../../img/logobrown.png" alt=""></a>
-			<span> sono il logo e Faccio schifo</span>
 		</div>
 
 		<div class="navbar-master">
@@ -34,10 +33,7 @@
 
 	<div class="home__intro">
 		<h1>Top Manager Group</h1>
-		<p>Sto pensando a un cazzo di motto che spacchi il culo Tipo:</p>
-		<h3>Costruiamo la tua identità digitale</h3>
 		<h3>Un nuovo modo di farsi conoscere</h3>
-		<p>io rifarei subito il logo, deve essere un qualcosa che ricordi una carta, per riferirsi alla web identity card</p>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
