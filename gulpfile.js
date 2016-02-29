@@ -28,7 +28,7 @@ elixir(function(mix) {
    .copy('resources/bower_box/velocity/velocity.js' , 'public/js/vendor')
    .copy('resources/bower_box/velocity/velocity.ui.js' , 'public/js/vendor')
    .copy('resources/bower_box/bootstrap-sass/assets/javascripts' , 'public/js/vendor' )
-   .copy('resources/assets/js/app.js' , 'public/js/vendor');
+   .copy('resources/assets/js/app.js' , 'public/js/vendor')
 
    .sass('app.scss')
 
