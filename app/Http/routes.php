@@ -11,14 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
-
-Route::get('/signup', function () {
-    return view('pages.signup');
-});
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -30,6 +22,9 @@ Route::get('/signup', function () {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
+Route::group(['middleware' => 'web'], function () {
+    Route::get('/', function () {return view('home');});
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
 });
